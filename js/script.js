@@ -70,3 +70,9 @@ $(document).ready(function () {
     },
   });
 });
+
+// Ripple effect on Hero section
+$(home).ripples({
+  dropRadius: 11,
+  perturbance: 0.01,
+});
