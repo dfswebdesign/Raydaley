@@ -35,7 +35,7 @@ $(document).ready(function () {
 
   // typing text animation script
   var typed = new Typed(".typing", {
-    strings: ["Developer", "Web Designer", "Freelancer"],
+    strings: ["Web Developer", "Web Designer", "Freelancer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
@@ -74,5 +74,5 @@ $(document).ready(function () {
 // Ripple effect on Hero section
 $(home).ripples({
   dropRadius: 11,
-  perturbance: 0.01,
+  perturbance: 0.02,
 });
