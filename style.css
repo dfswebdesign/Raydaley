@@ -222,9 +222,9 @@ section .title::after {
 }
 .about .about-content .left img {
   height: 400px;
-  width: 400px;
+  width: 480px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 .about .about-content .right {
   width: 55%;
@@ -373,16 +373,19 @@ section .title::after {
   width: 60%;
 }
 .skills-content .right .react::before {
-  width: 35%;
+  width: 20%;
 }
 .skills-content .right .nodejs::before {
-  width: 65%;
+  width: 45%;
 }
 .skills-content .right .mongodb::before {
   width: 45%;
 }
 .skills-content .right .ps::before {
   width: 75%;
+}
+.skills-content .right .wp::before {
+  width: 85%;
 }
 
 /* teams section styling */
