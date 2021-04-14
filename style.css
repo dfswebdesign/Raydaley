@@ -11,8 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 /* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -46,7 +44,6 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
-
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -70,9 +67,9 @@ section .title::before {
   position: absolute;
   bottom: 0px;
   left: 50%;
-  width: 180px;
+  width: 300px;
   height: 3px;
-  background: #111;
+  background: crimson;
   transform: translateX(-50%);
 }
 section .title::after {
@@ -112,7 +109,7 @@ section .title::after {
 
 .logo img {
   height: 88px;
-  opacity: .8;
+  opacity: 0.8;
   mix-blend-mode: multiply;
 }
 .navbar .logo a span {
@@ -225,11 +222,11 @@ section .title::after {
 
 .header-text {
   font-size: 24px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-weight: 100;
   margin-top: 2rem;
-  
-  font-family: 'ubuntu' sans-serif;
+
+  font-family: "ubuntu" sans-serif;
 }
 
 /* about section styling */
@@ -407,11 +404,9 @@ section .title::after {
   width: 85%;
 }
 
-
-
 /* teams section styling */
-.teams .title::after {
-  content: "who with me";
+/* .teams .title::after {
+  content: "Team work";
 }
 .teams .carousel .card {
   background: #222;
@@ -470,11 +465,27 @@ section .title::after {
 .owl-dot.active,
 .owl-dot:hover {
   background: crimson !important;
-}
+} */
 
 /* contact section styling */
 .contact .title::after {
-  content: "get in touch";
+  content: "Get In Touch";
+  background-color: #222;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contact {
+  background-color: #222;
+}
+
+.contact,
+.text,
+title {
+  color: #fff;
+}
+.contact .head {
+  color: rgb(173, 173, 173);
 }
 .contact .contact-content .column {
   width: calc(50% - 30px);
@@ -506,7 +517,7 @@ section .title::after {
   font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-  color: #333;
+  color: rgb(255, 255, 255);
 }
 .contact .right form .fields {
   display: flex;
