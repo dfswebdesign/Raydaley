@@ -28,7 +28,8 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 200px 0;
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
 }
 .max-width {
   max-width: 1300px;
@@ -108,7 +109,7 @@ section .title::after {
 }
 
 .logo img {
-  height: 88px;
+  height: 60px;
   opacity: 0.8;
   mix-blend-mode: multiply;
 }
@@ -231,7 +232,7 @@ section .title::after {
 
 /* about section styling */
 .about .title::after {
-  content: "who i am";
+  content: "Who Am I?";
 }
 .about .about-content .left {
   width: 45%;
@@ -286,7 +287,7 @@ section .title::after {
 .services .title::after,
 .teams .title::after {
   background: #111;
-  content: "what i provide";
+  content: "What I Provide";
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
@@ -296,6 +297,11 @@ section .title::after {
   padding: 20px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: 33px;
+}
+
+.services .card:hover {
+  box-shadow: 5px 5px 5px 5px rgba(230, 228, 228, 0.219);
 }
 .services .serv-content .card:hover {
   background: crimson;
@@ -323,7 +329,7 @@ section .title::after {
 /* skills section styling */
 
 .skills .title::after {
-  content: "what i know";
+  content: "What I Know";
 }
 .skills .skills-content .column {
   width: calc(50% - 30px);
@@ -386,13 +392,13 @@ section .title::after {
   width: 80%;
 }
 .skills-content .right .js::before {
-  width: 60%;
+  width: 75%;
 }
 .skills-content .right .react::before {
-  width: 20%;
+  width: 60%;
 }
 .skills-content .right .nodejs::before {
-  width: 45%;
+  width: 60%;
 }
 .skills-content .right .mongodb::before {
   width: 45%;
@@ -476,11 +482,11 @@ section .title::after {
 }
 
 .contact {
-  background-color: #222;
+  background-color: crimson;
 }
 
 .contact,
-.text,
+/* .text, */
 title {
   color: #fff;
 }
@@ -582,10 +588,11 @@ title {
 
 /* footer section styling */
 footer {
-  background: #111;
-  padding: 15px 23px;
-  color: #fff;
+  background: #fff;
+  padding: 100px 23px;
+  color: rgb(20, 20, 20);
   text-align: center;
+  margin-top: -50px;
 }
 footer span a {
   color: crimson;
